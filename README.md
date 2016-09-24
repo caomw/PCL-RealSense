@@ -22,8 +22,8 @@ PCL_PATH (i.e. C:\Program Files\PCL 1.7.2)
 
 # Screenshots 
 
-## RGB  |  Depth
-![alt tag](https://github.com/dBeker/PCL-RealSense/blob/master/images/rgb.png) | ![alt tag](https://github.com/dBeker/PCL-RealSense/blob/master/images/depth.png)
+## RGB and Depth
+![alt tag](https://github.com/dBeker/PCL-RealSense/blob/master/images/rgb.png) ![alt tag](https://github.com/dBeker/PCL-RealSense/blob/master/images/depth.png)
 
 ## Point Cloud
 ![alt tag](https://github.com/dBeker/PCL-RealSense/blob/master/images/pcl.png)
