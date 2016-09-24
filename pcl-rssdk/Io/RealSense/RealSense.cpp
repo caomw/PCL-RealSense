@@ -9,6 +9,7 @@ RealSense::RealSense()
 {
 	eventHandler = new RealSenseEventHandler(std::bind(&RealSense::Process, this, _1, _2, _3));
 
+	// TODO : Fix this part with automatical stream info obtaining 
 	PXCVideoModule::DataDesc ddesc = {};
 	ddesc.deviceInfo.streams = PXCCapture::STREAM_TYPE_COLOR | PXCCapture::STREAM_TYPE_DEPTH;
 	ddesc.streams.color.frameRate.max = 30;
