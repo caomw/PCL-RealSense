@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Io">
+      <UniqueIdentifier>{97640b7e-bc4c-4ac4-af51-5a74d01508a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Io\RealSense">
+      <UniqueIdentifier>{128a1e7a-dee2-46e5-aa74-18a44b5c3f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{63976da0-202b-4d5c-b58c-fd45958bd474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\PCL">
+      <UniqueIdentifier>{0545d5fc-9747-4cb2-b8aa-79d98c5f3ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Io">
+      <UniqueIdentifier>{8d5e3ec5-1c5c-43f2-addd-acacb9863f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Io\RealSense">
+      <UniqueIdentifier>{34eccd96-345b-4fb2-9235-77fb108fa4bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helper">
+      <UniqueIdentifier>{f3871607-e4b2-4f8f-8ff7-ed88055428db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Io\RealSense\RealSense.cpp">
+      <Filter>Source Files\Io\RealSense</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\PCL\Pcl.h">
+      <Filter>Header Files\Core\PCL</Filter>
+    </ClInclude>
+    <ClInclude Include="Io\RealSense\RealSense.h">
+      <Filter>Header Files\Io\RealSense</Filter>
+    </ClInclude>
+    <ClInclude Include="Io\RealSense\RealSenseEventHandler.h">
+      <Filter>Header Files\Io\RealSense</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\PointHelper.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
