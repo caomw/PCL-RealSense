@@ -3,7 +3,7 @@ RealSense - Point Cloud Library Bridge (VS2015)
 
 The code is grabbing depth and RGB image from a RealSense camera, maps them to fix the misalignment between depth and RGB image. 
 Then, transfers it to PCL for visualization (and possible processing) purpose. 
-Due to intensive point copy operations, it is limited to 1~2 fps 
+Due to intensive point copy operations, it is limited to 8~10 fps 
 
 # Usage 
 - Install PCL and RealSense SDK

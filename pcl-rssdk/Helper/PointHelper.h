@@ -30,12 +30,13 @@ namespace hv
 					PXCPoint3DF32 point = xyzsrc.at(i* width + j );
 					if (point.z == 0)
 					{
+						// TODO: instead of adding and removing, find more efficient way to handle this
 						cloud_row[j].x = cloud_row[j].y = cloud_row[j].z = nan;
 						continue;
 					}
-					cloud_row[j].x = point.x;
-					cloud_row[j].y = point.y;
-					cloud_row[j].z = point.z;
+					cloud_row[j].x = point.x / 1000; //convert to meters
+					cloud_row[j].y = point.y / 1000;
+					cloud_row[j].z = point.z / 1000;
 
 					if (color_row[j] == 0)
 					{
@@ -45,7 +46,9 @@ namespace hv
 					memcpy(&cloud_row[j].rgb, &color_row[j], sizeof(uint32_t));
 				}					
 			}
-			int k = 0;
+			// remove nan elements
+			std::vector<int> index;
+			pcl::removeNaNFromPointCloud(*tgt, *tgt, index);
 		};
 	};
 }
